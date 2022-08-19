@@ -279,3 +279,32 @@ Page
 .header-dropdown{
     left: -10px !important;
 }
+
+.btn-fill-2 {
+    width: 222px;
+    height: 41px;
+    background: var(--black);
+    border-radius: 8px;
+    margin: 0px 10px;
+
+}
+.btn-fill-2 a {
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: 600;
+}
+.card:hover .btn-fill-2 a {
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+.card:hover .btn-fill-2{
+    background-color: transparent;
+    border: 1px solid white;
+    color: var(--black) !important;
+}
+
+.btn-fill-2:hover a {
+    color: var(--black) !important;
+}
