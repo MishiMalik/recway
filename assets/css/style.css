@@ -196,3 +196,11 @@ main header
 	color: white;
 	margin-right: 6px;
 }
+
+/* ------------------------
+main body
+--------------------- */
+.main-heading h1{
+    font-size: 22px;
+    color: var(--black);
+}

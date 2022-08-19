@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/bootstrap-5/css/bootstrap.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/typograpgy.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap-5/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/typograpgy.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <title>Dashboard</title>
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+
 <body>
 
     <body>
@@ -23,48 +26,169 @@
             <nav id="sidebar" class="active-small">
                 <h1 class="f-40 w-600-l family-chrift">Dashboard</h1>
                 <ul class="m-0 p-0 side-list w-100">
-                    <li> <i class="fa-solid fa-people-group"></i><a href="" class="f-20 w-500 family-chrift">Staff</a></li>
+                    <li> <i class="fa-solid fa-people-group"></i><a href="" class="f-20 w-500 family-chrift">Staff</a>
+                    </li>
                     <li><i class="fa-solid fa-database"></i><a href="" class="f-20 w-500 family-chrift">Orders</a></li>
                     <li><i class="fa-solid fa-users"></i><a href="" class="f-20 w-500 family-chrift">Customers</a></li>
                 </ul>
-                 
+
             </nav>
-    
+
             <!-- Page Content  -->
             <div id="content" class="ml">
-    
+
                 <nav class="navbar navbar-expand-lg navbar-light mb-1 ">
                     <div class="container-fluid d-flex justify-content-between align-items-center">
-                        <button type="button" id="sidebarCollapse" class="order-lg-first order-last side-bar-btn btn text-sidebar bg-turbo-yellow">
+                        <button type="button" id="sidebarCollapse"
+                            class="order-lg-first order-last side-bar-btn btn text-sidebar bg-turbo-yellow">
                             <i class="fas fa-align-left"></i>
                             <span></span>
                         </button>
-                       
+
                         <div class="header ">
-                         <ul class="header-list p-0 m-0">
-                            <li class="order-lg-first order-last"><i class="fa-solid fa-user"></i><a href="" class="family-chrift">Profile</a></li>
-                            <li><button><a href="signIn.html" class="family-chrift">Log Out</a></button></li>
-                         </ul>
-    
-    
+                            <ul class="header-list p-0 m-0">
+                                <li class="order-lg-first order-last"><i class="fa-solid fa-user"></i><a href=""
+                                        class="family-chrift">Profile</a></li>
+                                <li><button><a href="signIn.html" class="family-chrift">Log Out</a></button></li>
+                            </ul>
+
+
                         </div>
                     </div>
                 </nav>
-               
+
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="main-heading  w-100">
+                            <h1 class=" my-4">Table Heading</h1>
+                        </div>
+                        <div class="data-table-div">
+                        <table id="dataTable" class="table table-striped data-table" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Age</th>
+                                    <th>Start date</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>61</td>
+                                    <td>2011-04-25</td>
+                                    <td>$320,800</td>
+                                </tr>
+                                <tr>
+                                    <td>Garrett Winters</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>63</td>
+                                    <td>2011-07-25</td>
+                                    <td>$170,750</td>
+                                </tr>
+                                <tr>
+                                    <td>Ashton Cox</td>
+                                    <td>Junior Technical Author</td>
+                                    <td>San Francisco</td>
+                                    <td>66</td>
+                                    <td>2009-01-12</td>
+                                    <td>$86,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Cedric Kelly</td>
+                                    <td>Senior Javascript Developer</td>
+                                    <td>Edinburgh</td>
+                                    <td>22</td>
+                                    <td>2012-03-29</td>
+                                    <td>$433,060</td>
+                                </tr>
+                                <tr>
+                                    <td>Airi Satou</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>33</td>
+                                    <td>2008-11-28</td>
+                                    <td>$162,700</td>
+                                </tr>
+                                <tr>
+                                    <td>Brielle Williamson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>New York</td>
+                                    <td>61</td>
+                                    <td>2012-12-02</td>
+                                    <td>$372,000</td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>Michael Bruce</td>
+                                    <td>Javascript Developer</td>
+                                    <td>Singapore</td>
+                                    <td>29</td>
+                                    <td>2011-06-27</td>
+                                    <td>$183,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Donna Snider</td>
+                                    <td>Customer Support</td>
+                                    <td>New York</td>
+                                    <td>27</td>
+                                    <td>2011-01-25</td>
+                                    <td>$112,000</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                       </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="main-heading  w-100">
+                            <h1 class=" mt-5 mb-4">Form Heading</h1>
+                        </div>
+                        <form action="">
+                            <div class="row p-0 m-0">
+                                <div class="col-lg-6">
+                                    <p class="f-16 mb-0 pb-0 w-600">Email</p>
+                                    <input type="text" class="sign-input w-100 mb-3" placeholder="Email Address ">
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <p class="f-16 mb-0 pb-0 w-600">Email</p>
+                                    <input type="text" class="sign-input w-100 mb-3" placeholder="Email Address ">
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <p class="f-16 mb-0 pb-0 w-600">Email</p>
+                                    <input type="text" class="sign-input w-100 mb-3" placeholder="Email Address ">
+                                </div>
+                                <div class="col-lg-6">
+                                    <button class="btn-fill w-100 mt-4"><a href="index.html">Send</a></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </form>
             </div>
-    
         </div>
-     
-     
-         <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
-         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-         crossorigin="anonymous"></script>
-          <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-    crossorigin="anonymous"></script>
-         <script type="text/javascript">
+
+        </div>
+
+        </div>
+
+
+        <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+        <script>
             $(document).ready(function () {
                 $('#sidebarCollapse').on('click', function () {
                     $('#sidebar').toggleClass('active');
@@ -72,12 +196,18 @@
                     $("#content").toggleClass('ml');
                     $("#content").toggleClass('ml-small');
                     $(".header").toggleClass('lg-desc-2');
-    
+
                 });
             });
+
+
+            $(document).ready(function () {
+                $('#dataTable').DataTable();
+            });
         </script>
-     </body>
-     
+    </body>
+
 
 </body>
+
 </html>

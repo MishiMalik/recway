@@ -15,6 +15,13 @@
 .family-chrift{
     font-family: 'Poppins', sans-serif;
 }
+
+}
+@media only screen and (max-width: 1080px){
+    .data-table-div{
+        overflow-x: scroll;
+    }
+  
 }
 @media only screen and (max-width: 768px) {
     .ml {
