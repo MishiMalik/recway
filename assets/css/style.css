@@ -1,5 +1,5 @@
 @font-face {
-    font-family:Bahnschrift Light;
+    font-family: Bahnschrift Light;
     src: url(/assets/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF);
 }
 
@@ -8,58 +8,46 @@ body {
     font-family: Bahnschrift Light;
 
 }
- .sign-input {
-	 font-style: normal;
-	 font-weight: 400;
-	 font-size: 16px;
-	 line-height: 24px;
-	 color: black;
-	 border: 1px solid #c5c5c5;
-	 border-radius: 8px;
-	 height: 45px;
-	 padding: 0px 15px;
-	 width: 440px !important;
+
+/* ------------------------------
+sign in
+---------------------------------- */
+.sign-row {
+    height: 100vh;
 }
 
- .sign-input::placeholder {
-	 color: #a6a0a0;
-}
- .sign-text {
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 flex-direction: column;
-	 height: 90vh !important;
+.sign-form {
+    border: 1px solid #c5c5c5;
+    padding: 30px;
+    border-radius: 5px;
 }
 
- .sign-line {
-	 height: 0px !important;
-	 border: 1px solid rgba(170, 170, 170, 0.8) !important;
-	 box-shadow: none !important;
-	 opacity: 1;
-	 border-radius: 80%;
-}
- .sign-small-display {
-	 display: none;
-}
+.sign-input {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    border: 1px solid #c5c5c5;
+    border-radius: 8px;
+    height: 45px;
+    padding: 0px 15px;
 
- .sign-forgot {
-	 display: flex;
-	 justify-content: space-between !important;
-	 align-items: center;
-	 width: 440px !important;
 }
 
+.sign-input::placeholder {
+    color: #a6a0a0;
+}
 
-.btn-fill{
+.btn-fill {
     width: 222px;
     height: 41px;
-    background: #18293D;;
+    background: var(--black);
     border-radius: 8px;
     margin: 0px 10px;
 
-    
 }
+
 .btn-fill a {
     text-decoration: none !important;
     color: white !important;
@@ -68,9 +56,140 @@ body {
 
 .btn-fill:hover {
     background-color: transparent;
-    border: 1px solid #18293D;
-    color: #18293D !important;
+    border: 1px solid var(--black);
+    color: var(--black) !important;
 }
+
 .btn-fill:hover a {
-    color: #18293D !important;
+    color: var(--black) !important;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: var(--black);
+    color: white;
+    transition: all 0.3s;
+    padding: 30px;
+    padding-bottom: 10px;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.sidebar-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content {
+    width: 100%;
+    padding: 15px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.ml {
+    margin-left: 250px;
+}
+
+/* -------------------
+sidebar content
+------------------------- */
+.side-list {
+list-style: none;
+}
+.side-list li{
+	padding: 13px 0px;
+	border-bottom: 1px solid white;
+}
+.side-list li i{
+	margin-right: 10px;
+	font-size: 20px;
+}
+.side-list li a{
+	color: white;
+	text-decoration: none;
+	
+}
+/* -----------------------
+main header
+------------------------ */
+.navbar{
+	background-color: var(--black);
+}
+.side-bar-btn:focus {
+	outline: none;
+	box-shadow: none;
+}
+.side-bar-btn i{
+	color: white;
+	font-size: 22px;
+}
+.header-list{
+	display: flex;
+	justify-content: center;
+	align-items:flex-end;
+}
+.header-list li{
+	margin: 0px 5px;
+}
+.header-list li button{
+	font-size: 18px;
+	margin-right: 6px;
+	text-decoration: none;
+	background-color: white;
+	border: none;
+	border-radius: 3px;
+}
+.header-list li button a{
+	font-size: 16px;
+	margin-right: 6px;
+	text-decoration: none;
+	color: var(--black);
+	
+	font-weight: 600 !important;
+}
+.header-list li a{
+	font-size: 18px;
+	color: white;
+	margin-right: 6px;
+	text-decoration: none;
+}
+.header-list li i{
+	font-size: 14px;
+	color: white;
+	margin-right: 6px;
 }
