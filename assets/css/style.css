@@ -1,0 +1,76 @@
+@font-face {
+    font-family:Bahnschrift Light;
+    src: url(/assets/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF);
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Bahnschrift Light;
+
+}
+ .sign-input {
+	 font-style: normal;
+	 font-weight: 400;
+	 font-size: 16px;
+	 line-height: 24px;
+	 color: black;
+	 border: 1px solid #c5c5c5;
+	 border-radius: 8px;
+	 height: 45px;
+	 padding: 0px 15px;
+	 width: 440px !important;
+}
+
+ .sign-input::placeholder {
+	 color: #a6a0a0;
+}
+ .sign-text {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;
+	 height: 90vh !important;
+}
+
+ .sign-line {
+	 height: 0px !important;
+	 border: 1px solid rgba(170, 170, 170, 0.8) !important;
+	 box-shadow: none !important;
+	 opacity: 1;
+	 border-radius: 80%;
+}
+ .sign-small-display {
+	 display: none;
+}
+
+ .sign-forgot {
+	 display: flex;
+	 justify-content: space-between !important;
+	 align-items: center;
+	 width: 440px !important;
+}
+
+
+.btn-fill{
+    width: 222px;
+    height: 41px;
+    background: #18293D;;
+    border-radius: 8px;
+    margin: 0px 10px;
+
+    
+}
+.btn-fill a {
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+.btn-fill:hover {
+    background-color: transparent;
+    border: 1px solid #18293D;
+    color: #18293D !important;
+}
+.btn-fill:hover a {
+    color: #18293D !important;
+}
