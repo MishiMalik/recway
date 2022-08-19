@@ -224,3 +224,58 @@ main body
     font-size: 16px;
     color: var(--black);
 }
+
+
+
+/* ----------------------------
+Page
+----------------------------- */
+.account-dp{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+.account-btn{
+    background-color: transparent;
+    border: none;
+    width: 120px;
+    color: white;
+}
+.card{
+    padding: 20px;
+    min-height: 300px;
+    text-decoration: none;
+    color: #18293D;
+    border-radius: 8px;
+}
+.card-icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card-icon i{
+    font-size: 45px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover{
+    background-color: var(--black);
+    color: white;
+}
+.card:hover .card-icon {
+    background-color: white;
+    color: var(--black);
+}
+.card:hover .card-icon i{
+    color: var(--black);
+}
+.header-dropdown{
+    left: -10px !important;
+}
