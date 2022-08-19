@@ -137,6 +137,7 @@ list-style: none;
 	padding: 13px 0px;
 	border-bottom: 1px solid white;
 }
+
 .side-list li i{
 	margin-right: 10px;
 	font-size: 18px;
@@ -145,6 +146,15 @@ list-style: none;
 	color: white;
 	text-decoration: none;
 	
+}
+.side-list li:hover,
+.side-list li:hover i
+.side-list li:hover a{
+	color: yellow;
+}
+
+.side-list .active i{
+	color: yellow !important;
 }
 /* -----------------------
 main header
@@ -203,4 +213,10 @@ main body
 .main-heading h1{
     font-size: 22px;
     color: var(--black);
+}
+
+.page-item.active .page-link{
+    background-color: var(--black);
+    border-color: var(--black);
+    color: white;
 }
