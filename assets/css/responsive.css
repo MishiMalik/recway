@@ -17,13 +17,27 @@
     .ml {
         margin-left: 0px;
     }
-    /* .ml-small {
-        margin-left: 250px !important;
-    } */
+
     #sidebar.active-small {
         margin-left: -250px !important;
     }
     #sidebar.active {
         margin-left:unset ;
+    }
+    .family-chrift{
+        font-family: 'Poppins', sans-serif;
+    }
+    .w-600-l{
+        font-weight:400 !important ;
+    }
+    .f-40{
+        font-size: 34px !important;
+    }
+    .side-list li i{
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .f-20{
+        font-size: 18px;
     }
 }

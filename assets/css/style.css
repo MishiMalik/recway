@@ -5,10 +5,12 @@
 
 body {
     box-sizing: border-box;
-    font-family: Bahnschrift Light;
+    font-family: 'Poppins', sans-serif;
 
 }
-
+.family-chrift{
+	font-family: Bahnschrift Light;
+}
 /* ------------------------------
 sign in
 ---------------------------------- */
@@ -162,6 +164,7 @@ main header
 	display: flex;
 	justify-content: center;
 	align-items:flex-end;
+	list-style: none;
 }
 .header-list li{
 	margin: 0px 5px;
