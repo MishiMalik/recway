@@ -12,6 +12,9 @@
     width: 100%;
     margin: 0px 0px;
 }
+.family-chrift{
+    font-family: 'Poppins', sans-serif;
+}
 }
 @media only screen and (max-width: 768px) {
     .ml {
@@ -24,9 +27,7 @@
     #sidebar.active {
         margin-left:unset ;
     }
-    .family-chrift{
-        font-family: 'Poppins', sans-serif;
-    }
+    
     .w-600-l{
         font-weight:400 !important ;
     }
