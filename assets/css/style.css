@@ -220,3 +220,7 @@ main body
     border-color: var(--black);
     color: white;
 }
+.action-icons a i{
+    font-size: 16px;
+    color: var(--black);
+}
