@@ -48,4 +48,21 @@
     .f-20{
         font-size: 18px;
     }
+    .state__list--item{
+      
+            margin: 10px 5px;
+            width: 100% !important;
+     
+    }
+    .state__list{
+flex-direction: column;    }
+.navbar{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.navbar .container-fluid{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
 }

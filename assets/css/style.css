@@ -161,6 +161,7 @@ main header
 ------------------------ */
 .navbar{
 	background-color: var(--black);
+  
 }
 .side-bar-btn:focus {
 	outline: none;
@@ -307,4 +308,37 @@ Page
 
 .btn-fill-2:hover a {
     color: var(--black) !important;
+}
+.dropzone{
+    border: 1px solid #c5c5c5 !important;
+    border-radius: 7px;
+    padding: 0px;
+}
+.no-decoration{
+    text-decoration: none;
+}
+/* isotope */
+.active-port{
+    color: var(--yellow) !important ;
+    text-decoration: underline !important;
+    font-weight: bold!important;
+}
+/* .state__list{
+    @media only screen and (max-width:710px){
+flex-direction: column;    }
+} */
+.state__list--item{
+    margin: 0px 5px;
+    white-space: nowrap;
+    background-color: transparent;
+    border: none;
+
+/* 
+    @media only screen and (max-width:710px){
+        margin: 10px 5px;
+        width: 100% !important;
+    } */
+}
+.previous-body{
+    min-height: 110vh;
 }
