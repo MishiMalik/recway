@@ -1,28 +1,32 @@
-
 @media only screen and (max-width: 991px) {
- .f-32{
-    font-size: 25px !important;
- }
- .sign-form{
-	border: 1px solid #c5c5c5;
-	padding: 15px !important;
-	border-radius: 5px;
-}
-.btn-fill{
-    width: 100%;
-    margin: 0px 0px;
-}
-.family-chrift{
-    font-family: 'Poppins', sans-serif;
-}
+    .f-32 {
+        font-size: 25px !important;
+    }
+
+    .sign-form {
+        border: 1px solid #c5c5c5;
+        padding: 15px !important;
+        border-radius: 5px;
+    }
+
+    .btn-fill {
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    .family-chrift {
+        font-family: 'Poppins', sans-serif;
+    }
 
 }
-@media only screen and (max-width: 1080px){
-    .data-table-div{
+
+@media only screen and (max-width: 1080px) {
+    .data-table-div {
         overflow-x: scroll;
     }
-  
+
 }
+
 @media only screen and (max-width: 768px) {
     .ml {
         margin-left: 0px;
@@ -31,38 +35,46 @@
     #sidebar.active-small {
         margin-left: -250px !important;
     }
+
     #sidebar.active {
-        margin-left:unset ;
+        margin-left: unset;
     }
-    
-    .w-600-l{
-        font-weight:400 !important ;
+
+    .w-600-l {
+        font-weight: 400 !important;
     }
-    .f-40{
+
+    .f-40 {
         font-size: 34px !important;
     }
-    .side-list li i{
+
+    .side-list li i {
         margin-right: 10px;
         font-size: 16px;
     }
-    .f-20{
+
+    .f-20 {
         font-size: 18px;
     }
-    .state__list--item{
-      
-            margin: 10px 5px;
-            width: 100% !important;
-     
-    }
-    .state__list{
-flex-direction: column;    }
-.navbar{
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-}
 
-.navbar .container-fluid{
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-}
+    .state__list--item {
+
+        margin: 10px 5px;
+        width: 100% !important;
+
+    }
+
+    .state__list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .navbar .container-fluid {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
 }
