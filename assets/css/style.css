@@ -465,6 +465,11 @@ flex-direction: column;    }
     overflow-x: scroll !important;
 }
 
+.status{
+    background-color: var(--yellow);
+    padding: 3px;
+    border-radius: 3px;
+}
 
 
 
