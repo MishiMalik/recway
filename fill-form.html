@@ -52,19 +52,19 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 vh-100  d-flex justify-content-center align-items-center ">
+                <!-- <div class="col-lg-4 vh-100  d-flex justify-content-center align-items-center ">
                     <div class="main-heading  w-100 ">
                         <h1 class=" mt-4 f-35">Quitin Decok</h1>
                         <p class="f-16">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
-                </div>
-                <div class="col-lg-8  h-100">
+                </div> -->
+                <div class="col-lg-8  h-100 mx-auto ">
                     <div class="main-heading  w-100">
                         <p class="f-12 w-400 mb-0 mt-4">loemfa-stack-2x</p>
                         <h1 class="  f-35 w-600">Table Heading</h1>
                         <p class="f-20 w-500 mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
-                        <form class="row">
+                        <form class="row form">
                             <div class="col-lg-12">
                                 <p class="f-16 mb-0 pb-0 w-600 mt-2">Social Number</p>
                                 <input type="text" class="sign-input w-100 mb-3" placeholder="Email Address ">
@@ -85,39 +85,21 @@
                                 <p class="f-16 mb-0 pb-0 w-600 mt-2">Pta ni kshy</p>
                                 <input type="text" class="sign-input w-100 mb-3" placeholder="Email Address ">
                             </div>
-                            <div class="col-lg-12 mt-2">
-                                <p class="f-16 mb-0 pb-0 w-600 mt-3">CV Verification</p>
-                                <!--begin::Form-->
-                                <div class="form ">
-                                    <!--begin::Input group-->
-                                    <div class="fv-row  ">
-                                        <!--begin::Dropzone-->
-                                        <div class="dropzone" id="kt_dropzonejs_example_1">
-                                            <!--begin::Message-->
-                                            <div class="dz-message needsclick">
-                                                <!--begin::Icon-->
-                                                <i class="fa-solid fa-cloud-arrow-up f-40"></i>
-                                                <!--end::Icon-->
-
-                                                <!--begin::Info-->
-                                                <div class="ms-4">
-                                                    <h3 class="f-20 w-600">Drag and Drop or Click Here!
-                                                    </h3>
-                                                    <span class="f-18 w-500">Upload up to 10
-                                                        files</span>
-                                                </div>
-                                                <!--end::Info-->
-                                            </div>
-                                        </div>
-                                        <!--end::Dropzone-->
+                            <div class="col-lg-12">
+                                <div class="form-group file-area w-100">
+                                    <div class="d-flex justify-content-between">
+                                        <label for="images" class="f-16 w-600 mt-2">CV Verification</label>
+                                        <span class="f-14 w-500">Your images should be at least 400x300 wide</span>
                                     </div>
-                                    <!--end::Input group-->
-
+                                    <input class="sign-input w-100 " type="file" name="images" id="images"
+                                        required="required" multiple="multiple" />
+                                    <div class="file-dummy sign-input  ">
+                                        <div class="success ">Great, your files are selected. Keep on.</div>
+                                        <div class="default ">Please select some files</div>
+                                    </div>
                                 </div>
-                                <!--end::Form-->
-                                <p class="f-16 w-400 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Sequi assumenda, expedita fugit vel accusamus.</p>
                             </div>
+                            
 
                             <div class="col-lg-12 mt-5">
                                 <h1 class="f-20">Billing</h1>
