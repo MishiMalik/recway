@@ -20,20 +20,26 @@ sign in
     height: 100vh;
 }
 
+.sign-form {
+    border: 1px solid #c5c5c5;
+    padding: 30px;
+    border-radius: 4px;
+    width: 478px;
 
+}
 
-/* .sign-input {
+.sign-input {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: black;
-    border: none;
-    border-bottom: 1px solid #c5c5c5 !important;
+    border: 1px solid #c5c5c5 !important;
+    border-radius: 8px;
     height: 45px;
     padding: 0px 15px;
 
-} */
+}
 
 .sign-input::placeholder {
     color: #a6a0a0;
@@ -489,7 +495,7 @@ flex-direction: column;    }
    
   #sidebar::-webkit-scrollbar-thumb {
     background-color:var(--dark-gray);
-    outline: 1px solid var(--dark-blue);
+    outline: 1px solid var(--yellow);
     border-radius:10px;
   }
 
@@ -576,35 +582,18 @@ flex-direction: column;    }
     font-size: 18px;
     color: var(--dark-blue);
 }
-.sign-form {
-    border: 1px solid #c5c5c5;
-    padding:50px 30px;
-    border-radius: 8px;
-    max-width: 400px;
-}
-.input-div{
-    position: relative;
-}
-.input-div i{
-    position: absolute;
-    bottom: 8px;
-    color: #a6a0a0;;
-}
+
 .sign-input {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: black;
-    border: none;
-    border-bottom: 1px solid #c5c5c5 !important;
+    border: 1px solid #c5c5c5 !important;
+    border-radius: 8px;
     height: 40px;
-    padding: 10px 0px;
-    margin-top: 7px;
-}
-.sign-input:focus{
-    outline: none;
-    box-shadow: none;
+    padding: 0px 15px;
+
 }
 
 .sign-input::placeholder {
@@ -635,4 +624,66 @@ flex-direction: column;    }
    
     background-color: var(--dark-blue);
     color: white;
+}
+.continue-msg{
+    color: #06889b;
+    background-color: #e1f8fb;
+    position: relative;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #b5edf5;
+    border-radius: 4px;
+}
+.sign-form h4{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #364a63;
+    letter-spacing: -0.02em;
+}
+.sign-form  p{
+    color: #526484;
+}
+.sign-form  label{
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    color: #344357 !important;
+}
+.sign-form  input{
+    display: block;
+    width: 100%;
+    padding: 0.5375rem 1rem;
+    font-size:14px;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #3c4d62;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #dbdfea;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.sign-form button{
+    color: #fff;
+    background-color: #6576ff;
+    border-color: #6576ff;
+}
+.sign-form button{
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0.5375rem 1rem;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #6576ff;
+    box-shadow: none;
+    border: none;
+}
+.sign-form button:hover{
+background-color: #6576ff;
+}
+a{
+    text-decoration: none;
 }
