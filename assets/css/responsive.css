@@ -17,11 +17,26 @@
     .family-chrift {
         font-family: 'Poppins', sans-serif;
     }
+    
+.data-table{
+    width: 100% !important;
+    max-width: 580px !important;
+    min-width: 100% !important;
+    overflow-x: scroll !important;
+}
+.data-table #dataTable{   
+    width: 1100px !important;
+    overflow-x: scroll !important;
+}
 
 }
 
 
 @media only screen and (max-width: 768px) {
+    .buttons-row{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
     .ml {
         margin-left: 0px;
     }

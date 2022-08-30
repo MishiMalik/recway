@@ -23,7 +23,8 @@ sign in
 .sign-form {
     border: 1px solid #c5c5c5;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 8px;
+    max-width: 480px;
 }
 
 .sign-input {
@@ -46,9 +47,10 @@ sign in
 .btn-fill {
     width: 222px;
     height: 41px;
-    background: var(--black);
+    background: var(--dark-blue);
     border-radius: 8px;
     margin: 0px 10px;
+    border: none !important;
 
 }
 
@@ -59,20 +61,20 @@ sign in
 }
 
 .btn-fill:hover {
-    background-color: transparent;
-    border: 1px solid var(--black);
-    color: var(--black) !important;
+    background-color: var(--light-blue);
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue) !important;
 }
 
 .btn-fill:hover a {
-    color: var(--black) !important;
+    color: var(--dark-blue) !important;
 }
 
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-.wrapper {
+/* .wrapper {
     display: flex;
     width: 100%;
     align-items: stretch;
@@ -81,7 +83,7 @@ sign in
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: var(--black);
+    background: var(--dark-blue);
     color: white;
     transition: all 0.3s;
     padding: 30px;
@@ -95,8 +97,16 @@ sign in
     height: 100vh;
 }
 
+
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: -200px;
+
+}
+#sidebar.active .side-list{
+  display: none;
+}
+#sidebar:hover{
+    margin-left: 0px;
 }
 
 a[data-toggle="collapse"] {
@@ -129,9 +139,6 @@ a[data-toggle="collapse"] {
     margin-left: 250px;
 }
 
-/* -------------------
-sidebar content
-------------------------- */
 .side-list {
     list-style: none;
 }
@@ -159,13 +166,13 @@ sidebar content
 
 .side-list .active i {
     color: yellow !important;
-}
+} */
 
 /* -----------------------
 main header
 ------------------------ */
-.navbar {
-    background-color: var(--black);
+/* .navbar {
+    background-color: var(--dark-blue);
 
 }
 
@@ -177,7 +184,7 @@ main header
 .side-bar-btn i {
     color: white;
     font-size: 22px;
-}
+} */
 
 .header-list {
     display: flex;
@@ -203,7 +210,7 @@ main header
     font-size: 16px;
     margin-right: 6px;
     text-decoration: none;
-    color: var(--black);
+    color: var(--dark-blue);
 
     font-weight: 600 !important;
 }
@@ -226,18 +233,18 @@ main body
 --------------------- */
 .main-heading h1 {
     font-size: 22px;
-    color: var(--black);
+    color: var(--dark-blue);
 }
 
 .page-item.active .page-link {
-    background-color: var(--black);
-    border-color: var(--black);
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
     color: white;
 }
 
 .action-icons a i {
     font-size: 16px;
-    color: var(--black);
+    color: var(--dark-blue);
 }
 
 
@@ -297,7 +304,7 @@ Page
     height: 100px;
     width: 100px;
     border-radius: 100%;
-    background-color: var(--black);
+    background-color: var(--dark-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,17 +320,17 @@ Page
 }
 
 .card:hover {
-    background-color: var(--black);
+    background-color: var(--dark-blue);
     color: white;
 }
 
 .card:hover .card-icon {
     background-color: white;
-    color: var(--black);
+    color: var(--dark-blue);
 }
 
 .card:hover .card-icon i {
-    color: var(--black);
+    color: var(--dark-blue);
 }
 
 .header-dropdown {
@@ -333,7 +340,7 @@ Page
 .btn-fill-2 {
     width: 222px;
     height: 41px;
-    background: var(--black);
+    background: var(--dark-blue);
     border-radius: 8px;
     margin: 0px 10px;
 
@@ -354,11 +361,11 @@ Page
 .card:hover .btn-fill-2 {
     background-color: transparent;
     border: 1px solid white;
-    color: var(--black) !important;
+    color: var(--dark-blue) !important;
 }
 
 .btn-fill-2:hover a {
-    color: var(--black) !important;
+    color: var(--dark-blue) !important;
 }
 
 .dropzone {
@@ -453,7 +460,7 @@ flex-direction: column;    }
     border-radius: 8px;
 }
 
-
+/* 
 .data-table{
     width: 100% !important;
     max-width: 580px !important;
@@ -463,7 +470,7 @@ flex-direction: column;    }
 .data-table #dataTable{   
     width: 1100px !important;
     overflow-x: scroll !important;
-}
+} */
 
 .status{
     background-color: var(--yellow);
@@ -471,6 +478,24 @@ flex-direction: column;    }
     border-radius: 3px;
 }
 
+#sidebar{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#sidebar::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+   
+  #sidebar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  #sidebar::-webkit-scrollbar-thumb {
+    background-color:var(--dark-gray);
+    outline: 1px solid var(--yellow);
+    border-radius:10px;
+  }
 
 
 
@@ -480,6 +505,121 @@ flex-direction: column;    }
 
 
 
+.total-card{
+    padding: 20px;
+    color: #18293D;
+    border-radius:8px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.w-800{
+    font-weight: 800;
+}
 
 
+/* new */
+.box{
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+}
+.table{
+   border: 1px solid #dee2e6;
+   font-size: 14px !important;
+}
+.table th{
+    color: var(--dark-gray);
+    font-weight: 500;
+ }
+.table > :not(caption) > * > *{
+    box-shadow: none !important;
+}
+.table > :not(:last-child) > :last-child > *{
+    border-bottom-color: inherit ;
+}
+.dataTables_filter label{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
 
+.dataTables_filter label input{
+    width: 200px;
+    margin-left: 10px;
+}
+.dataTables_length{
+    width: 117px;
+    overflow: hidden;
+    margin-bottom: 30px;
+   
+}
+.dataTables_length label{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+.dataTables_length label select{
+    width: 80px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.dataTables_paginate{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+.dataTables_info{
+    font-size: 14px;
+}
+
+
+/* replace */
+.main-heading h1 {
+    font-size: 18px;
+    color: var(--dark-blue);
+}
+
+.sign-input {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+    border: 1px solid #c5c5c5 !important;
+    border-radius: 8px;
+    height: 40px;
+    padding: 0px 15px;
+
+}
+
+.sign-input::placeholder {
+    color: #a6a0a0;
+}
+
+.buttons .order {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    background-color: white;
+    border: 1px solid var(--dark-blue);
+    padding: 0px 15px;
+    border-radius: 3px;
+    min-width: 130px;
+    margin-left:10px;
+}
+.buttons .dropdown button{
+    height: 35px;
+    width: 35px;
+    background-color: var(--dark-blue);
+    border: none;
+    color: white;
+    margin-left:10px;
+}
+.buttons  .order:hover{
+   
+    background-color: var(--dark-blue);
+    color: white;
+}
