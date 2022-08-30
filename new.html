@@ -7,16 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/bootstrap-5/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css">
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/typograpgy.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
     <title>Document</title>
 </head>
 
@@ -29,11 +28,11 @@
             </div>
             <div class="sidebar-layout">
                 <div class="sidebar-header">
-                    <a id="btn-collapse" href="#" >
-                        <i class="ri-menu-line ri-xl f-22 text-white ps-2"></i>
+                    <a id="btn-collapse" href="#">
+                        <i class="bi bi-list f-22 text-white ps-2"></i>
                     </a>
                     <a id="btn-toggle2" href="#" class="sidebar-toggler break-point-lg">
-                        <i class="ri-menu-line ri-xl"></i>
+                        <i class="bi bi-list"></i>
                     </a>
                 </div>
                 <div class="sidebar-content">
@@ -42,12 +41,12 @@
                             <li class="menu-item">
                                 <a href="#">
                                     <span class="menu-icon">
-                                       <img src="assets/images/dashboard-5481.svg" alt="" height="20px" width="20px">
+                                        <img src="assets/images/dashboard-5481.svg" alt="" height="20px" width="20px">
                                     </span>
                                     <span class="menu-title text-dark-blue mt-1">Dashboard</span>
                                 </a>
                             </li>
-                           
+
                         </ul>
                         <div class="menu-item py-3">
                             <span class="ps-4 f-14 w-500 text-light-white ls-3 menu-heading ">PEOPLE</span>
@@ -82,7 +81,7 @@
                             <span class="ps-4 f-14 w-500 text-light-white ls-3 menu-heading ">INTERVIEW</span>
                         </div>
                         <ul>
-                           
+
                             <li class="menu-item">
                                 <a href="#">
                                     <span class="menu-icon">
@@ -99,14 +98,14 @@
                                     <span class="menu-title">Messages</span>
                                 </a>
                             </li>
-                          
-                            
+
+
                         </ul>
                         <div class="menu-item py-3">
                             <span class="ps-4 f-14 w-500 text-light-white ls-3 menu-heading ">SETTINGS</span>
                         </div>
                         <ul>
-                       
+
                             <li class="menu-item">
                                 <a href="#">
                                     <span class="menu-icon">
@@ -115,13 +114,13 @@
                                     <span class="menu-title">History</span>
                                 </a>
                             </li>
-                            
+
                         </ul>
                         <div class="menu-item py-3">
                             <span class="ps-4 f-14 w-500 text-light-white ls-3 menu-heading ">DUMMY</span>
                         </div>
                         <ul>
-                           
+
                             <li class="menu-item">
                                 <a href="#">
                                     <span class="menu-icon">
@@ -138,14 +137,14 @@
                                     <span class="menu-title">Messages</span>
                                 </a>
                             </li>
-                          
-                            
+
+
                         </ul>
                     </nav>
                 </div>
             </div>
         </aside>
-      
+
         <div id="overlay" class="overlay"></div>
         <div class="layout">
             <header class="header">
@@ -153,21 +152,24 @@
                     <i class="ri-menu-line ri-xl"></i>
                 </a> -->
                 <a id="btn-toggle" href="#" class="sidebar-toggler break-point-lg">
-                    <i class="ri-menu-line ri-xl"></i>
+                    <i class="bi bi-list"></i>
                 </a>
                 <div class="d-flex ms-auto">
                     <div class="user-icon">
                         <i class="fa-regular fa-user"></i>
                     </div>
                     <div class="dropdown profile-dropdown">
-                        <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                         Jhon Doe
+                        <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Jhon Doe
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user me-2"></i> Profile</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-left me-2"></i>Logout</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user me-2"></i> Profile</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-left me-2"></i>Logout</a>
+                            </li>
                         </ul>
-                      </div>
+                    </div>
                 </div>
             </header>
             <main class="content">
@@ -178,25 +180,31 @@
                                 <h1 class="f-14 my-4">Table Heading</h1>
                             </div>
                             <div class="d-flex align-items-center buttons">
-                                <a href="" class="d-flex f-14 w-500 order"><i class="bi bi-file-earmark-text me-2"></i>Pending(1)</a>
-                                <a href="" class="d-flex f-14 w-500 order"><i class="bi bi-file-earmark-text me-2"></i>All Orders</a>
+                                <a href="" class="d-flex f-14 w-500 order"><i
+                                        class="bi bi-file-earmark-text me-2"></i>Pending(1)</a>
+                                <a href="" class="d-flex f-14 w-500 order"><i
+                                        class="bi bi-file-earmark-text me-2"></i>All Orders</a>
                                 <div class="dropdown  ">
-                                    <button class=" " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button class=" " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
                                         <i class="bi bi-plus f-16"></i>
                                     </button>
                                     <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
-                                      <li  class="mb-2"><a class="dropdown-item f-14" href="#"><i class="bi bi-eye me-2 f-16 w-600"></i>View</a></li>
-                                      <li class="mb-2"><a class="dropdown-item f-14" href="#"><i class="bi bi-pencil-square w-600 me-2 f-16"></i> Edit</a></li>
-                                      <li class="mb-2"><a class="dropdown-item f-14" href="#"><i class="bi bi-person-x me-2 f-16 w-600"></i>Delete</a></li>
+                                        <li class="mb-2"><a class="dropdown-item f-14" href="#"><i
+                                                    class="bi bi-eye me-2 f-16 w-600"></i>View</a></li>
+                                        <li class="mb-2"><a class="dropdown-item f-14" href="#"><i
+                                                    class="bi bi-pencil-square w-600 me-2 f-16"></i> Edit</a></li>
+                                        <li class="mb-2"><a class="dropdown-item f-14" href="#"><i
+                                                    class="bi bi-person-x me-2 f-16 w-600"></i>Delete</a></li>
                                     </ul>
-                                  </div>
+                                </div>
                             </div>
                         </div>
-                        
+
 
                         <div class="box shadow">
                             <div class="data-table">
-                                <table id="dataTable" class="table  " >
+                                <table id="dataTable" class="table  ">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -205,7 +213,7 @@
                                             <th>Age</th>
                                             <th>Start date</th>
                                             <th>Actions</th>
-                                           
+
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -217,23 +225,30 @@
                                             <td> System Architect</td>
                                             <td class="text-center">
                                                 <div class="dropdown profile-dropdown ">
-                                                    <button class=" " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <button class=" " type="button" id="dropdownMenuButton1"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="fa-solid fa-ellipsis-vertical"></i>
                                                     </button>
-                                                    <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
-                                                      <li  class="mb-2"><a class="dropdown-item f-14" href="#"><i class="bi bi-eye me-2 f-16 w-600"></i>View</a></li>
-                                                      <li class="mb-2"><a class="dropdown-item f-14" href="#"><i class="bi bi-pencil-square w-600 me-2 f-16"></i> Edit</a></li>
-                                                      <li class="mb-2"><a class="dropdown-item f-14" href="#"><i class="bi bi-person-x me-2 f-16 w-600"></i>Delete</a></li>
+                                                    <ul class="dropdown-menu shadow-sm"
+                                                        aria-labelledby="dropdownMenuButton1">
+                                                        <li class="mb-2"><a class="dropdown-item f-14" href="#"><i
+                                                                    class="bi bi-eye me-2 f-16 w-600"></i>View</a></li>
+                                                        <li class="mb-2"><a class="dropdown-item f-14" href="#"><i
+                                                                    class="bi bi-pencil-square w-600 me-2 f-16"></i>
+                                                                Edit</a></li>
+                                                        <li class="mb-2"><a class="dropdown-item f-14" href="#"><i
+                                                                    class="bi bi-person-x me-2 f-16 w-600"></i>Delete</a>
+                                                        </li>
                                                     </ul>
-                                                  </div>
-                                                
+                                                </div>
+
                                             </td>
-                                          
+
                                         </tr>
-                                       
-    
-    
-    
+
+
+
+
                                         <tr>
                                             <td>Michael Bruce</td>
                                             <td>Javascript Developer</td>
@@ -242,15 +257,22 @@
                                             <td>2011-06-27</td>
                                             <td class="text-center">
                                                 <div class="dropdown profile-dropdown ">
-                                                    <button class=" " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <button class=" " type="button" id="dropdownMenuButton1"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="fa-solid fa-ellipsis-vertical"></i>
                                                     </button>
-                                                    <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
-                                                      <li  class="mb-2"><a class="dropdown-item f-14" href="#"><i class="bi bi-eye me-2 f-16 w-600"></i>View</a></li>
-                                                      <li class="mb-2"><a class="dropdown-item f-14" href="#"><i class="bi bi-pencil-square w-600 me-2 f-16"></i> Edit</a></li>
-                                                      <li class="mb-2"><a class="dropdown-item f-14" href="#"><i class="bi bi-person-x w-600 me-2 f-16"></i>Delete</a></li>
+                                                    <ul class="dropdown-menu shadow-sm"
+                                                        aria-labelledby="dropdownMenuButton1">
+                                                        <li class="mb-2"><a class="dropdown-item f-14" href="#"><i
+                                                                    class="bi bi-eye me-2 f-16 w-600"></i>View</a></li>
+                                                        <li class="mb-2"><a class="dropdown-item f-14" href="#"><i
+                                                                    class="bi bi-pencil-square w-600 me-2 f-16"></i>
+                                                                Edit</a></li>
+                                                        <li class="mb-2"><a class="dropdown-item f-14" href="#"><i
+                                                                    class="bi bi-person-x w-600 me-2 f-16"></i>Delete</a>
+                                                        </li>
                                                     </ul>
-                                                  </div>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -261,19 +283,26 @@
                                             <td>2011-01-25</td>
                                             <td class="text-center">
                                                 <div class="dropdown profile-dropdown ">
-                                                    <button class=" " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <button class=" " type="button" id="dropdownMenuButton1"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="fa-solid fa-ellipsis-vertical"></i>
                                                     </button>
-                                                    <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuButton1">
-                                                      <li  class="mb-2"><a class="dropdown-item f-14" href="#"><i class="bi bi-eye me-2 f-16 w-600"></i>View</a></li>
-                                                      <li class="mb-2"><a class="dropdown-item f-14" href="#"><i class="bi bi-pencil-square me-2 f-16 w-600"></i> Edit</a></li>
-                                                      <li class="mb-2"><a class="dropdown-item f-14" href="#"><i class="bi bi-person-x me-2 f-16 w-600"></i>Delete</a></li>
+                                                    <ul class="dropdown-menu shadow"
+                                                        aria-labelledby="dropdownMenuButton1">
+                                                        <li class="mb-2"><a class="dropdown-item f-14" href="#"><i
+                                                                    class="bi bi-eye me-2 f-16 w-600"></i>View</a></li>
+                                                        <li class="mb-2"><a class="dropdown-item f-14" href="#"><i
+                                                                    class="bi bi-pencil-square me-2 f-16 w-600"></i>
+                                                                Edit</a></li>
+                                                        <li class="mb-2"><a class="dropdown-item f-14" href="#"><i
+                                                                    class="bi bi-person-x me-2 f-16 w-600"></i>Delete</a>
+                                                        </li>
                                                     </ul>
-                                                  </div>
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
-    
+
                                 </table>
                             </div>
                         </div>
@@ -289,52 +318,54 @@
                                         <p class="f-14 mb-0 pb-0 w-500">Name</p>
                                         <input type="text" class="sign-input w-100 mb-3" placeholder="Your Name ">
                                     </div>
-        
+
                                     <div class="col-lg-6 ps-0">
                                         <p class="f-14 mb-0 pb-0 w-500">Email</p>
                                         <input type="text" class="sign-input w-100 mb-3" placeholder="Email Address ">
                                     </div>
-        
+
                                     <div class="col-lg-6 ps-0">
                                         <p class="f-14 mb-0 pb-0 w-500">Phone</p>
                                         <input type="text" class="sign-input w-100 mb-3" placeholder="Phone Number ">
                                     </div>
                                     <div class="col-lg-6 ps-0">
-                                        <button class="btn-fill w-100 mt-4"><a href="index.html" class="f-14 w-500">Send</a></button>
+                                        <button class="btn-fill w-100 mt-4"><a href="index.html"
+                                                class="f-14 w-500">Send</a></button>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        
+
 
                         <div class="d-flex align-items-center buttons">
-                            <a href="" class="d-flex f-14 w-600 order mt-5 ms-0"><i class="bi bi-arrow-left me-1"></i>Go Back</a>
-                           
+                            <a href="" class="d-flex f-14 w-600 order mt-5 ms-0"><i class="bi bi-arrow-left me-1"></i>Go
+                                Back</a>
+
                         </div>
                     </div>
 
-                </div> 
-        
+                </div>
+
             </main>
             <div class="overlay"></div>
         </div>
     </div>
 
 
-    
+
     <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
-    <script src="layout.js"></script>
+    <script src="assets/layout.js"></script>
     <!-- <script src="assets/app.js"></script> -->
     <script>
         // Data Table
-$(document).ready(function () {
-  $('#dataTable').DataTable();
-});
+        $(document).ready(function () {
+            $('#dataTable').DataTable();
+        });
 
     </script>
 </body>
