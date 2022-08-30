@@ -20,25 +20,20 @@ sign in
     height: 100vh;
 }
 
-.sign-form {
-    border: 1px solid #c5c5c5;
-    padding: 30px;
-    border-radius: 8px;
-    max-width: 480px;
-}
 
-.sign-input {
+
+/* .sign-input {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: black;
-    border: 1px solid #c5c5c5 !important;
-    border-radius: 8px;
+    border: none;
+    border-bottom: 1px solid #c5c5c5 !important;
     height: 45px;
     padding: 0px 15px;
 
-}
+} */
 
 .sign-input::placeholder {
     color: #a6a0a0;
@@ -63,12 +58,13 @@ sign in
 .btn-fill:hover {
     background-color: var(--light-blue);
     border: 1px solid var(--dark-blue);
-    color: var(--dark-blue) !important;
+    color: white !important;
+}
+.btn-fill:hover a{
+    
+    color: white !important;
 }
 
-.btn-fill:hover a {
-    color: var(--dark-blue) !important;
-}
 
 
 /* ---------------------------------------------------
@@ -580,18 +576,35 @@ flex-direction: column;    }
     font-size: 18px;
     color: var(--dark-blue);
 }
-
+.sign-form {
+    border: 1px solid #c5c5c5;
+    padding:50px 30px;
+    border-radius: 8px;
+    max-width: 400px;
+}
+.input-div{
+    position: relative;
+}
+.input-div i{
+    position: absolute;
+    bottom: 8px;
+    color: #a6a0a0;;
+}
 .sign-input {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: black;
-    border: 1px solid #c5c5c5 !important;
-    border-radius: 8px;
+    border: none;
+    border-bottom: 1px solid #c5c5c5 !important;
     height: 40px;
-    padding: 0px 15px;
-
+    padding: 10px 0px;
+    margin-top: 7px;
+}
+.sign-input:focus{
+    outline: none;
+    box-shadow: none;
 }
 
 .sign-input::placeholder {
