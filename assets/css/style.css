@@ -489,7 +489,7 @@ flex-direction: column;    }
    
   #sidebar::-webkit-scrollbar-thumb {
     background-color:var(--dark-gray);
-    outline: 1px solid var(--yellow);
+    outline: 1px solid var(--dark-blue);
     border-radius:10px;
   }
 

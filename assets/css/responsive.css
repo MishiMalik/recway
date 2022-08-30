@@ -86,4 +86,11 @@
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .sign-form{
+        width: 300px;
+    }
 }
